@@ -38,7 +38,7 @@
   [type='unclassified'][zoom>=15] {
     text-name:"[name]";
     text-fill:#444;
-    text-halo-fill:#fff;
+    text-halo-fill:#ffffff;
   }
 }
 
@@ -48,7 +48,7 @@
   text-face-name:@font_reg;
   text-name:"[name]";
   text-fill:#444;
-  text-halo-fill:rgba(255,255,255,0.8);
+  text-halo-fill:#ffffff;
   text-halo-radius:2;
   text-transform:uppercase;
   [zoom=11] {
@@ -69,7 +69,7 @@
   text-face-name:@font_reg;
   text-name:"[name]";
   text-fill:#444;
-  text-halo-fill:rgba(255,255,255,0.8);
+  text-halo-fill:#ffffff;
   text-halo-radius:2;
   text-transform:uppercase;
   text-size:9;
@@ -96,9 +96,9 @@
 #places[type='neighbourhood'][zoom>14][zoom<18] {
   text-face-name:@font_reg;
   text-name:"[name]";
-  text-fill:#555;
-  text-halo-fill:rgba(255,255,255,0.8);
-  text-halo-radius:2;
+  text-fill:#444;
+  text-halo-fill:#ffffff;
+  text-halo-radius:3;
   text-wrap-width:100;
   text-wrap-before:true;
   [zoom=15] {

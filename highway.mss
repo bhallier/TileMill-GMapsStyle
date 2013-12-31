@@ -1,6 +1,6 @@
-@motorway:  #F56544;
+@motorway:  #ffffff;
 @trunk:     @motorway;
-@primary:   #ffc53d;
+@primary:   #ffffff;
 @secondary: @primary;
 @road:      #ccc;
 @track:     @road;
@@ -118,6 +118,7 @@
   // -- widths --
   [type='motorway'],
   [type='trunk'] {
+    line-color:@secondary;
     [zoom=12] { line-width: 1.2 + 2; }
     [zoom=13] { line-width: 2 + 2; }
     [zoom=14] { line-width: 4 + 2; }
@@ -177,22 +178,22 @@
   [type='motorway'],
   [type='motorway_link'] {
     line-color:lighten(@motorway,10);
-    [tunnel=1] { line-color:@motorway * 0.5 + rgb(127,127,127); }
+    [tunnel=1] { line-color:@motorway * 0.5 + #ffffff; }
   }
   [type='trunk'],
   [type='trunk_link'] {
     line-color:lighten(@trunk,10);
-    [tunnel=1] { line-color:@trunk * 0.5 + rgb(127,127,127); }
+    [tunnel=1] { line-color:@trunk * 0.5 + #ffffff; }
   }
   [type='primary'],
   [type='primary_link'] {
     line-color:lighten(@primary,20);
-    [tunnel=1] { line-color:@primary * 0.5 + rgb(127,127,127); }
+    [tunnel=1] { line-color:@primary * 0.5 + #ffffff; }
   }
   [type='secondary'],
   [type='secondary_link'] {
     line-color:lighten(@secondary,20);
-    [tunnel=1] { line-color:@secondary * 0.5 + rgb(127,127,127); }
+    [tunnel=1] { line-color:@secondary * 0.5 + #ffffff; }
   }
   // -- widths --
   [type='motorway'],
@@ -246,7 +247,7 @@
   marker-placement:line;
   marker-line-width:1;
   marker-line-opacity:0.5;
-  marker-line-color:#fff;
+  marker-line-color:#c3c3c3;
   marker-spacing: 200;
   marker-fill:spin(darken(@motorway,50),-10);
   marker-opacity:0.8;

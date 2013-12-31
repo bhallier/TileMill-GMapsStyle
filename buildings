@@ -1,8 +1,0 @@
-#buildings {
-  [type="school"]{
-    polygon-fill: #1a2;
-    }
-  	polygon-fill: #1d2a1c;
-  
-  
-}

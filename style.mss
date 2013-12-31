@@ -21,10 +21,11 @@ downloading the Imposm shapefile package.
 
 /* ---- PALETTE ---- */
 
-@water:#c0d8ff;
-@park:#cea;
-@land:#f5fcf0;
-@school:#f8e8c8;
+@water:#5ebee8;
+@park:#cadea9;
+@land:#e8e3db;
+@school:#d2d2d2;
+@buildings:#c3c3c3;
 
 Map {
   background-color:@land;
@@ -64,11 +65,11 @@ Map {
     polygon-fill: @school;
   }
  }
-  
-  #rails[zoom>=3] {
-  [FeatureCla='Railroad'] {
-    line-cap:round;
-    line-join:round;
-      [zoom=11] { line-width:2; }
-  }
-}
+
+#buildings[zoom>=16] {
+    polygon-fill: @buildings;
+  [zoom>=18]{
+  	polygon-fill: #999898;
+
+    }
+ }
