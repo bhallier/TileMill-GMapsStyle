@@ -66,7 +66,7 @@ Map {
   }
  }
 
-#buildings[zoom>=16] {
+#buildings[zoom>=13] {
     polygon-fill: @buildings;
   [zoom>=18]{
   	polygon-fill: #999898;
